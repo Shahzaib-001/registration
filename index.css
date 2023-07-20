@@ -1,0 +1,123 @@
+body{
+    background-image: url(lou-batier-5EoWFa_Htdo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+    background-color: rgba(100, 100, 100, 0.61);
+    backdrop-filter: blur(3px);
+    border-radius: .625rem;
+    margin-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    text-align: center;
+}
+.head{
+    color: rgb(231, 231, 231);
+    opacity: 1;
+    font-size: 1.25rem;
+}
+.sub-detail{
+    width: 25rem;
+    border: .0625rem solid rgb(138, 135, 135);
+    border-radius: 1.25rem;
+    background: transparent;
+    text-align: center;
+    height: 1.875rem;
+    margin-top: 1.875rem;
+    transition: background-color 0.15s;
+}
+input[type=text]:focus {
+    background-color: rgb(192, 192, 192);
+  }
+::placeholder{
+    color: rgb(26, 26, 26);
+    opacity: 1;
+}
+.accept{
+    margin-right: 11.25rem;
+    margin-top: .625rem;
+    font-size: .75rem;
+    color: rgb(26, 26, 26);
+}
+.btn{
+    margin-top: 1.875rem;
+}
+.register-btn{
+    width: 21.875rem;
+    height: 2.5rem;
+    background-color: orange;
+    border: none;
+    border-radius: .1875rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.register-btn:hover{
+    background-color: rgb(175, 114, 0);
+    opacity: 1;
+}
+.register-btn:active{
+    background-color: rgb(54, 54, 54);
+    opacity: 1;
+}
+.login-now{
+    margin-top: 1.875rem;
+   
+}
+.account{   
+    color: rgb(26, 26, 26);
+    font-size: .75rem;
+    margin-left: 40%;
+}
+.now{
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+.now:hover{
+    background: transparent;
+    color: rgb(240, 192, 104);
+    opacity: 1;
+}
+.now:active{
+    background-color: transparent;
+    color:  rgb(31, 31, 31);
+    opacity: 1;
+}
+@media screen and (max-width: 37.5rem) {
+    .main{
+        width: 18.75rem;
+        text-align: center;
+        padding-left: .625rem;
+        padding-right: .625rem;
+        padding-bottom: 1.5625rem;
+        margin-top: 1.5625rem;
+    }
+    .head{
+       font-size: 1.125rem;
+    }
+    .sub-detail{
+        width: 15.625rem;
+        align-items: center;
+    }
+    .accept{
+        margin-top: .9375rem;
+        margin-right: 2.5rem;
+        font-size: .6875rem;
+    }
+    .register-btn{
+        width: 18.75rem;
+        font-size: .75rem;
+    }
+    .account{
+        margin-left: 20%;
+        font-size: .6875rem;
+    }
+}

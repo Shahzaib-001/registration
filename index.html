@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
+</head>
+<body>
+    <div class="main">
+        <div class="head"><h1>Registration</h1></div>
+        <div class="name">
+            <input type="text" name="name" id="your-name" placeholder="Enter your name" class="sub-detail" required>
+        </div>
+        <div class="email">
+            <input type="text" name="email" id="your-email" placeholder="Enter your email" class="sub-detail" required>
+        </div>
+        <div class="password">
+            <input type="text" name="password" id="create-password" placeholder="Create password" class="sub-detail" required>
+        </div>
+        <div class="confirm-password">
+            <input type="text" name="confirm" id="confirm-password" placeholder="Confirm password" class="sub-detail" required>
+        </div>
+        <div class="accept">
+            <label for="terms-condition">
+            <input type="radio" name="accept" id="terms-condition" class="terms-condition" >I accept all terms & conditions</label>
+        </div>
+        <div class="btn">
+            <button onclick="register()" class="register-btn">Register Now</button>
+        </div>
+        <div class="login-now">
+            <span class="account">Already have an account?<button class="now">Login Now</button></span>
+        </div>
+    </div>
+    <script>
+        function register(){
+            const name = document .querySelector("#your-name") .value;
+            const email = document .querySelector("#your-email") .value;
+            const password = document .querySelector("#create-password") .value;
+            const confirm = document .querySelector ("#confirm-password") .value;
+            if(name==="Shahzaib Bukhari" && email==="bukharishahzaib707@gmail.com" && password === "1122" && confirm ==="1122"){
+                alert('Welcome, you are Registered')
+            }
+            else{
+                alert('Opps! Registration Failed')
+            }
+        }
+    </script>
+</body>
+</html>
